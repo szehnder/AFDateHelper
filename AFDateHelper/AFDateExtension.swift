@@ -26,6 +26,7 @@ public extension NSDate {
     // MARK: Components
     //private class func componentFlags() -> NSCalendarUnit { return .YearCalendarUnit | .MonthCalendarUnit | .DayCalendarUnit | .WeekCalendarUnit | .HourCalendarUnit | .MinuteCalendarUnit | .SecondCalendarUnit | .WeekdayCalendarUnit | .WeekdayOrdinalCalendarUnit | .CalendarUnitWeekOfYear }
     //private class func componentFlags() -> NSCalendarUnit { return NSCalendarUnit.CalendarUnitYear | NSCalendarUnit.CalendarUnitMonth | NSCalendarUnit.CalendarUnitDay | NSCalendarUnit.CalendarUnitWeekOfYear | NSCalendarUnit.CalendarUnitHour | NSCalendarUnit.CalendarUnitMinute | NSCalendarUnit.CalendarUnitSecond  | NSCalendarUnit.CalendarUnitWeekday | NSCalendarUnit.CalendarUnitWeekdayOrdinal | NSCalendarUnit.CalendarUnitWeekOfYear }
+
     private class func componentFlags() -> NSCalendarUnit { return [NSCalendarUnit.Year , .Month , .Day , .WeekOfMonth , .Hour , .Minute , .Second , .Weekday , .WeekdayOrdinal , .WeekOfYear] }
     
     private class func components(fromDate fromDate: NSDate) -> NSDateComponents! {
