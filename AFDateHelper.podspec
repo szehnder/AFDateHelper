@@ -10,4 +10,5 @@ Pod::Spec.new do |s|
   s.description = 'Convenience extension for NSDate in Swift for creating, modifying or comparing dates.'
   s.source_files = 'AFDateHelper/*'
   s.requires_arc = true
+  s.public_header_files = ''
 end
